@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            color: #66ff66;
+            background-color: rgb(37, 37, 37);
+            font-size: 20pt;
+            font-family: monospace;
+        }
+        strong{
+            color: lawngreen;
+            font-size: 21pt;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Nome: ")
+        var idade = window.prompt("Idade: ")
+        var salar = Number(window.prompt("Salario: "))
+        document.write(`Seu nome é <strong>${nome.toUpperCase()}</strong></br> `)
+        document.write(`Você tem <strong>${idade}</strong> anos</br>`)
+        document.write(`Você ganha <strong>${salar.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</strong>`)
+    </script>
+</body>
+</html>
