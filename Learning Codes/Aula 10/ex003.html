@@ -9,7 +9,7 @@
         div{
             background-color: rgb(0, 26, 56);
             font-family: Arial, Helvetica, sans-serif;
-            color: yellow;
+            color: transparent;
             font-size: 18pt;
             height: 200px;
             width: 200px;
@@ -24,30 +24,48 @@
             border-width: 4px;
             border-color: transparent;
             border-style: solid;
+            border-spacing: 10cm;
+            transition: border-color 0.7s, color 1.3s;
+        }
+        div:hover{
+            border-color: yellow;
+            color: yellow;
         }
         body{
             background-color: rgb(61, 61, 61);
         }
     </style>
 </head>
-<body onselectstart='return false'>
+<body onselectstart='return false' onkeydown="keyboard(event)">
     <div id="div"></div>
     <script>
         var count = 0
+        var isInside = false
         var a = window.document.getElementById("div")
         a.addEventListener('click', clique)
         a.addEventListener('mouseenter', entrou)
         a.addEventListener('mouseout', saiu)
+        function keyboard(event){
+            if((event.keyCode == 38 | event.keyCode == 39) & isInside){
+                count++
+                a.innerText = count
+            }else{
+                if((event.keyCode == 37 | event.keyCode == 40) & isInside){
+                    count--
+                    a.innerText = count
+                }
+            }
+        }
         function clique(){
             count++
             a.innerText = count
         }
         function entrou(){
-            a.style.borderColor = 'yellow'
+            isInside = true
             a.innerText = count
         }
         function saiu(){
-            a.style.borderColor = 'transparent'
+            isInside = false
             a.innerText=''
         }
     </script>
