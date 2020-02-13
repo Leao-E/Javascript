@@ -1,0 +1,13 @@
+body{
+    background: rgb(79, 79, 119);
+}
+
+.oi{
+    font-family: fantasy;
+    color: tomato;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(200, 238, 238);
+    text-shadow: 1pt 0 tomato, 0 1pt tomato ;
+}

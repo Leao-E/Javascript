@@ -5,37 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(83, 56, 25);
-            color: antiquewhite;
-        }
-        input{
-            background-color:  rgb(70, 51, 31);
-            text-align: center;
-            color: antiquewhite;
-            width: 43.4%;
-            border-radius: 10px;
-        }
-        .button{
-            margin-top: 10px;
-            width: 100%;
-        }
-        .centro{
-            width: 200px;
-            height: 200px;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-top: -100px;
-            margin-left: -100px;
-        }
-        .titulo{
-            padding-top: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="ex004.css">
 </head>
 <body>
     <div class="centro">
@@ -50,11 +20,6 @@
         </div>
         <p id="result"></p>
     </div>
-    <script>
-        function somar(){
-            var result = document.getElementById("result")
-            result.innerHTML = `R: <strong>${Number(document.getElementById("num1").value) + Number(document.querySelector("input#num2").value)}</strong>`
-        }
-    </script>
+    <script src="ex004.js"></script>
 </body>
 </html>

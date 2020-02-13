@@ -1,0 +1,10 @@
+body{
+    color: #66ff66;
+    background-color: rgb(37, 37, 37);
+    font-size: 20pt;
+    font-family: monospace;
+}
+strong{
+    color: lawngreen;
+    font-size: 21pt;
+}

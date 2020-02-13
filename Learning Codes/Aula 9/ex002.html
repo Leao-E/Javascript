@@ -5,23 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DOM</title>
-    <style>
-        body{
-            background: burlywood;
-            color: bisque;
-            font-family: Arial, Helvetica, sans-serif ;
-            font-size: 20pt ;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="main()">
     <h3>Estudos DOM</h3>
     <p><strong>R</strong>esultado: </p>
-    <div id = "parag"><strong>C</strong>lique em mim</div>
-    <script>
-        var e = document.querySelector('div#parag')
-        e.style.backgroundColor = 'green'
-        
-    </script>
+    <div id = "parag" class="mouse"><strong>C</strong>lique em mim</div>
+    <script src="script.js"></script>
 </body>
 </html>

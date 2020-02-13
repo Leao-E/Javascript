@@ -1,0 +1,28 @@
+div{
+    background-color: rgb(0, 26, 56);
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    font-size: 18pt;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-width: 4px;
+    border-color:  rgb(61, 61, 61);
+    border-style: solid;
+    border-spacing: 10cm;
+    transition: border-color 0.7s, color 1.3s;
+}
+div:hover{
+    border-color: yellow;
+    color: yellow;
+}
+body{
+    background-color: rgb(61, 61, 61);
+}
