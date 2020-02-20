@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 .0">
+    <meta name="description" content="Agência especializada em Marketing Digital, Criação de Apps">
+    <meta name="keywords" content="Agência digital, Marketing, Sites">
+    <!-- Robots serve para os mecanismos de busca -->
+    <meta name="robots" content="index, follor">
+    <meta name="author" content="Leao.E">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Para usar o icones do font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <!-- Para usar as fontes do google fontes -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap" rel="stylesheet">
+    <title>NodeProp - Soluções Digitais</title>
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html"></a><h1 class="logo">NodeProp - Soluções Digitais</h1>
+        <button id="btn-menu" class="btn-menu"><i class="fas fa-bars fa-lg"></i></button>
+        <nav id="menu" class="menu"> 
+            <a id="btn-close" class="btn-close">x</a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Clientes</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Quem Somos</a></li>
+                <li><a href="">Contatos</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="banner">
+        <h2> OUSE INOVAR! </h2>
+        <h3> Criamos experiências e estabelecemos ações estratégiccas que conectam marcas e consumidores. </h3>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script>
+        $("#btn-menu").click(function(){
+            $("#menu").removeClass("anim-esconde-menu");
+            $("#menu").addClass("anim-mostra-menu");
+        })
+        $("#btn-close").click(function(){
+            $("#menu").removeClass("anim-mostra-menu")
+            $("#menu").addClass("anim-esconde-menu")
+            setTimeout(function(){
+               $("#menu").removeClass("anim-esconde-menu")
+            }, 800)            
+        })
+    </script>
+</body>
+</html>
