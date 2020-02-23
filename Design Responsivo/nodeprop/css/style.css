@@ -187,5 +187,36 @@ img{
     opacity: 1;
 }
 .servicos{
-    
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+}
+.servico{
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 3%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.089) ;
+}
+.servico img{
+    border-radius: 7px 7px 0 0;
+}
+.inner{
+    padding: 3%;
+}
+.inner a{
+    font-size: 1.5em;
+    color: #130400;
+    font-weight: 700;
+}
+.inner h4{
+    margin-top: 2.5%;
+    font-size: 1.2em;
+    color: #130400;
+}
+.inner p{
+    margin-top: 6%;
+    color: #130400;
+    line-height: 1.45em;
 }
