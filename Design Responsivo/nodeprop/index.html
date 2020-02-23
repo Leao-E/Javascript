@@ -21,7 +21,7 @@
         <a href="index.html"></a><h1 class="logo">NodeProp - Soluções Digitais</h1>
         <button id="btn-menu" class="btn-menu"><i class="fas fa-bars fa-lg"></i></button>
         <nav id="menu" class="menu"> 
-            <a id="btn-close" class="btn-close">x</a>
+            <a id="btn-close" class="btn-close"><i class="far fa-times-circle"></i></a>
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Clientes</a></li>
@@ -31,12 +31,22 @@
                 <li><a href="">Contatos</a></li>
             </ul>
         </nav>
-        
     </header>
     <div class="banner">
-        <h2> OUSE INOVAR! </h2>
-        <h3> Criamos experiências e estabelecemos ações estratégiccas que conectam marcas e consumidores. </h3>
+        <div class="title">
+            <h2> OUSE INOVAR! </h2>
+            <h3> Criamos experiências e estabelecemos ações estratégiccas que conectam marcas e consumidores. </h3>
+        <div class="buttons">
+            <button class="btn-cadastrar"> Cadastre-se <i class="fas fa-user-plus"></i> </button>
+            <button class="btn-sobre"> Sobre <i class="fas fa-question"></i> </button>
+        </div>
+        </div>
     </div>
+    <main class="servicos">
+        <article>
+            <a href="#"><img src="img/criacoes.jpg" alt=""></a>
+        </article>
+    </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
@@ -50,7 +60,7 @@
             $("#menu").addClass("anim-esconde-menu")
             setTimeout(function(){
                $("#menu").removeClass("anim-esconde-menu")
-            }, 800)            
+            }, 600)            
         })
     </script>
 </body>
