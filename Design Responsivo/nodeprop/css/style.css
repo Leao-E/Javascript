@@ -267,3 +267,30 @@ img{
     transition: ease-in .35s;
     opacity: 1;
 }
+.rodape{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+    background-image: linear-gradient(to right, #ce2e3c, #da6709);
+}
+.social-icons a{
+    transition: color .15s;
+    transition: all 1s;
+    font-size: 1.5em;
+    color: rgba(255,255,255,0.7);
+    margin-right: 2%;
+}
+.social-icons a:last-child{
+    margin-right: 0;
+}
+.social-icons a:hover img{
+    -webkit-transform: scale(2,2);
+    transform: scale(2,2);
+    transition: all .15s;
+    color: #fff;
+}
+.copyright{
+    margin-top: 3%;
+    color: rgba(255,255,255,.7);
+}
